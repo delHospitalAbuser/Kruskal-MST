@@ -81,7 +81,7 @@ def KruskalMST(vertices, G):
     
     return result   
 
-#KruskalMST(vertices, G.edges())
+
 result = KruskalMST(vertices, G.edges())
 
 
@@ -93,14 +93,13 @@ listOfTuples = []
 for list in listOfLists:
     listOfTuples.append(tuple(list))
     
-#print(listOfTuples)
+
 
 
 
 
 
 G1 = G.subgraph(edges =listOfTuples)
-#plot(G, save_pos = True, edge_labels = True)
 g1 = plot(G, edge_color = 'red')
 g2 = plot(G1,edge_color = 'blue',edge_labels = True,)
 

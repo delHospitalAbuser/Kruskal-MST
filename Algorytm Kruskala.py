@@ -16,8 +16,6 @@ for k in krawedzie:
     i+=randint(1,20)
 
 
-
-
 #G = Graph()
 #G.add_edges([(2, 3, 4),(0, 1, 10),(0, 2, 6),(0, 3, 5),(1, 3, 15)])
 vertices = len(G.vertices())
@@ -76,9 +74,6 @@ def KruskalMST(vertices, G):
         minimalny_koszt += waga
         print("%d -- %d == %d" % (u, v, waga))
     print("Waga minimalnego drzewa:", minimalny_koszt)
-    
-
-    
     return result   
 
 
@@ -93,11 +88,6 @@ listOfTuples = []
 for list in listOfLists:
     listOfTuples.append(tuple(list))
     
-
-
-
-
-
 
 G1 = G.subgraph(edges =listOfTuples)
 g1 = plot(G, edge_color = 'red')
